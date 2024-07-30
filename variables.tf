@@ -27,6 +27,12 @@ variable "encryption_option" {
   default     = "SSE_S3"
 }
 
+variable "execution_role" {
+  type = string
+  description = "The execution role for the workgroup."
+  default = null
+}
+
 variable "kms_key_arn" {
   type        = string
   description = " For SSE_KMS and CSE_KMS, this is the KMS key Amazon Resource Name (ARN)."

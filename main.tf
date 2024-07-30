@@ -77,6 +77,7 @@ resource "aws_athena_workgroup" "main" {
     bytes_scanned_cutoff_per_query     = var.bytes_scanned_cutoff_per_query > 0 ? var.bytes_scanned_cutoff_per_query : null
     enforce_workgroup_configuration    = var.enforce_workgroup_configuration
     publish_cloudwatch_metrics_enabled = var.publish_cloudwatch_metrics_enabled
+    execution_role                     = var.execution_role
 
     result_configuration {
       output_location = var.output_location

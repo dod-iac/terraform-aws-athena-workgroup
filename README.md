@@ -93,6 +93,7 @@ No Modules.
 | enabled | Whether the workgroup is enabled. | `bool` | `true` | no |
 | encryption\_option | Indicates type of encryption used, either SSE\_S3, SSE\_KMS, or CSE\_KMS. | `string` | `"SSE_S3"` | no |
 | enforce\_workgroup\_configuration | Boolean whether the settings for the workgroup override client-side settings. | `bool` | `true` | no |
+| execution_role | The arn of the role to run as for the workgroup. | `string` | `null` | no |
 | kms\_key\_arn | For SSE\_KMS and CSE\_KMS, this is the KMS key Amazon Resource Name (ARN). | `string` | `""` | no |
 | name | The name of the AWS IAM policy. | `string` | n/a | yes |
 | output\_location | The location in Amazon S3 where your query results are stored, such as s3://path/to/query/bucket/. | `string` | n/a | yes |
